@@ -1,0 +1,225 @@
+body{
+    background-color: #28aef9;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    perspective-origin: 50%;
+    -webkit-perspective-origin: 50%;
+}
+
+.button {
+    position: absolute;
+    bottom: 15px;
+    font-size: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: white;
+    color: #28aef9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: #28aef9;
+    border: 1px solid white;
+}
+
+.button:active {
+    color: #28aef9;
+    background-color: white;
+}
+
+.dice{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    /* animation: rotate 3s infinite; */
+}
+
+.animate {
+    animation: rotate 3s;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateX(720deg) rotateZ(360deg);
+    }
+}
+
+.face{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border: 7px solid #28aef9;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.front {
+    transform: translateZ(125px);
+}
+
+.back {
+    transform: translateZ(-125px) rotateY(180deg);
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-125px);
+    transform-origin: center left;
+}
+
+.right {
+    transform: rotateY(-270deg) translateX(125px);
+    transform-origin: top right;
+}
+
+.bottom {
+    transform: rotateX(90deg) translateZ(-125px);
+}
+
+.top {
+    transform: rotateX(-90deg) translateZ(-125px);
+}
+
+.face>div {
+    background-color: #28aef9;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.front>div {
+    top: 95px;
+    left: 95px;
+}
+
+.left>div:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.left>div:nth-child(2) {
+    top: 95px;
+    left: 95px;
+}
+
+.left>div:nth-child(3) {
+    bottom: 15px;
+    right: 15px;
+}
+
+.right>div:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.right>div:nth-child(2) {
+    top: 95px;
+    left: 95px;
+}
+
+.right>div:nth-child(3) {
+    bottom: 15px;
+    right: 15px;
+}
+
+.right>div:nth-child(4) {
+    top: 15px;
+    right: 15px;
+}
+
+.right>div:nth-child(5) {
+    left: 15px;
+    bottom: 15px;
+}
+
+.back>div:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.back>div:nth-child(2) {
+    right: 15px;
+    bottom: 15px;
+}
+
+.top>div:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.top>div:nth-child(2) {
+    top: 15px;
+    right: 15px;
+}
+
+.top>div:nth-child(3) {
+    right: 15px;
+    bottom: 15px;
+}
+
+.top>div:nth-child(4) {
+    bottom: 15px;
+    left: 15px;
+}
+
+.bottom>div:nth-child(1) {
+    top: 15px;
+    left: 15px;
+}
+
+.bottom>div:nth-child(2) {
+    top: 15px;
+    right: 15px;
+}
+
+.bottom>div:nth-child(3) {
+    right: 15px;
+    bottom: 15px;
+}
+
+.bottom>div:nth-child(4) {
+    bottom: 15px;
+    left: 15px;
+}
+
+.bottom>div:nth-child(5) {
+    top: 95px;
+    left: 15px;
+}
+
+.bottom>div:nth-child(6) {
+    top: 95px;
+    right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
