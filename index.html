@@ -35,7 +35,9 @@
         var diceButton = document.querySelector('.button');
         var dice = document.querySelector('.dice');
         diceButton.addEventListener('click', onClick);
+        // var timer = null;
         function onClick() {
+            // clearTimeout(timer);
             dice.classList.remove('animate1');
             dice.classList.remove('animate2');
             dice.classList.remove('animate3');
@@ -68,11 +70,11 @@
                     break;
             }
             // dice.classList.add('animate3');
-            diceButton.disabled = true;
-            setTimeout(() => {
-                // dice.classList.remove('animate3');
-                diceButton.disabled = false;           
-            }, 5000);
+            // diceButton.disabled = true;
+            // timer = setTimeout(() => {
+            //     // dice.classList.remove('animate3');
+            //     diceButton.disabled = false;           
+            // }, 5000);
         }
     </script>
 </body>

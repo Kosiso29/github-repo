@@ -19,27 +19,33 @@ body{
 
 .button {
     position: absolute;
-    bottom: 15px;
-    font-size: 1rem;
+    bottom: 50px;
+    font-size: 2rem;
     right: 50%;
     transform: translateX(50%);
     background-color: white;
     color: #28aef9;
-    padding: 10px 20px;
-    border: none;
+    padding: 10px 30px;
+    border: 5px solid #28aef9;
     cursor: pointer;
     border-radius: 2px;
 }
 
-.button:hover {
+.button:hover:enabled {
     color: white;
     background-color: #28aef9;
-    border: 1px solid white;
+    border: 5px solid #28aef9;
 }
 
 .button:active {
     color: #28aef9;
     background-color: white;
+}
+
+.button:disabled {
+    border: 5px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
 }
 
 .dice{
@@ -51,68 +57,68 @@ body{
 }
 
 .animate1 {
-    animation: rotate1 5s forwards;
+    animation: rotate1 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 .animate2 {
-    animation: rotate2 5s forwards;
+    animation: rotate2 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 .animate3 {
-    animation: rotate3 5s forwards;
+    animation: rotate3 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 .animate4 {
-    animation: rotate4 5s forwards;
+    animation: rotate4 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 .animate5 {
-    animation: rotate5 5s forwards;
+    animation: rotate5 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 .animate6 {
-    animation: rotate6 5s forwards;
+    animation: rotate6 10s forwards;
     /* animation-fill-mode: forwards; */
 }
 
 @keyframes rotate1 {
     100% {
-        transform: rotateX(calc(1080deg + 720deg)) rotateZ(360deg);
+        transform: rotateX(calc(3240deg + 720deg)) rotateZ(360deg);
     }
 }
 
 @keyframes rotate2 {
     100% {
-        transform: rotateX(calc(1080deg + 900deg)) rotateZ(540deg) rotateY(270deg);
+        transform: rotateX(calc(3240deg + 900deg)) rotateZ(540deg) rotateY(270deg);
     }
 }
 
 @keyframes rotate3 {
     100% {
-        transform: rotateX(calc(1080deg + 900deg)) rotateZ(540deg) rotateY(90deg);
+        transform: rotateX(calc(3240deg + 900deg)) rotateZ(540deg) rotateY(90deg);
     }
 }
 
 @keyframes rotate4 {
     100% {
-        transform: rotateX(calc(1080deg + 900deg)) rotateZ(540deg);
+        transform: rotateX(calc(3240deg + 900deg)) rotateZ(540deg);
     }
 }
 
 @keyframes rotate5 {
     100% {
-        transform: rotateX(calc(1080deg + 630deg)) rotateZ(360deg);
+        transform: rotateX(calc(3240deg + 630deg)) rotateZ(360deg);
     }
 }
 
 @keyframes rotate6 {
     100% {
-        transform: rotateX(calc(1080deg + 810deg)) rotateZ(360deg);
+        transform: rotateX(calc(3240deg + 810deg)) rotateZ(360deg);
     }
 }
 
